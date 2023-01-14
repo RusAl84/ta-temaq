@@ -1,13 +1,11 @@
 ﻿from flask import Flask, jsonify, render_template, request, send_from_directory
 from flask_cors import CORS, cross_origin
-from werkzeug.utils import secure_filename
 from tmodel import tmodel
 
 
 app = Flask(__name__)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-
 
 
 @app.route('/')
